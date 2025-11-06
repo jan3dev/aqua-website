@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* Spacing Scale */
+  --spacing-m1: 16px;
+  --spacing-m2: 24px;
+  --spacing-l2: 48px;
+
+  /* Text Colors */
+  --text-primary: #080d11;
+  --text-inverse-secondary: #c9f4ff;
+
+  /* Surface Colors */
+  --surface-background: #ffffff;
+
+  /* Glass Effect Colors */
+  --glass-surface: #02103c99;
+  --glass-surface-accent: #00c7f9b2;
+
+  /* Brand & Accent Colors */
+  --accent-brand: #00c7f9;
+  --accent-brand-transp: #009ad60a;
+
+  /* Status Colors */
+  --accent-success: #00a398;
+  --accent-success-transp: #00a3980a;
+  --accent-warning: #e0a800;
+  --accent-warning-transp: #f7b9000a;
+  --accent-danger: #e92424;
+  --accent-danger-transp: #ff2e2e0a;
+}
+

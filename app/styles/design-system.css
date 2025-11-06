@@ -1,0 +1,94 @@
+:root {
+    /* Color Primitives */
+    --solid-white: #FFFFFF;
+    --solid-white-8: #FFFFFF14;
+    --solid-black: #000000;
+    --gray-50: #F6F7F8;
+    --gray-100: #E5EBF0;
+    --gray-200: #CCD8E1;
+    --gray-300: #B2C4D2;
+    --gray-400: #98B1C3;
+    --gray-500: #697E8D;
+    --gray-600: #4A5C68;
+    --gray-700: #374550;
+    --gray-750: #2C3A43;
+    --gray-800: #1F2B33;
+    --gray-850: #172026;
+    --gray-900: #121A20;
+    --gray-950: #0D1419;
+    --gray-1000: #080D11;
+    
+    --glaucous-50: #F2F5F9;
+    --glaucous-100: #DDE3EC;
+    --glaucous-200: #C0CAD9;
+    --glaucous-300: #9CAAC0;
+    --glaucous-400: #7A879B;
+    --glaucous-500: #5A6980;
+    --glaucous-600: #4D5B72;
+    --glaucous-700: #3D495D;
+    --glaucous-750: #333E51;
+    --glaucous-800: #273142;
+    --glaucous-850: #21293B;
+    --glaucous-900: #1B2334;
+    --glaucous-950: #131927;
+    --glaucous-1000: #0D121D;
+  
+    --aqua-blue-50: #F7FDFF;
+    --aqua-blue-100: #C9F4FF;
+    --aqua-blue-100-20: #C9F4FF33;
+    --aqua-blue-200: #5ADBFB;
+    --aqua-blue-300: #00C7F9;
+    --aqua-blue-400: #01B0E7;
+    --aqua-blue-500: #009AD6;
+    --aqua-blue-500-16: #009AD629;
+    --aqua-blue-500-4: #009AD60A;
+    --aqua-blue-600: #0082B5;
+    --aqua-blue-700: #03709A;
+    --aqua-blue-750: #066286;
+    --aqua-blue-800: #085370;
+    --aqua-blue-850: #0A465E;
+    --aqua-blue-850-90: #0A465EE6;
+    --aqua-blue-850-4: #0A465E0A;
+    --aqua-blue-900: #0C394C;
+    --aqua-blue-950: #1A2E36;
+    --aqua-blue-1000: #101E24;
+
+    --palatinate-blue-50: #EBF0FF;
+    --palatinate-blue-100: #AEC4FE;
+    --palatinate-blue-200: #86A6FE;
+    --palatinate-blue-300: #5D88FD;
+    --palatinate-blue-400: #356AFD;
+    --palatinate-blue-500: #0242F2;
+    --palatinate-blue-500-16: #0242F229;
+    --palatinate-blue-500-4: #0242F20A;
+    --palatinate-blue-600: #0237CA;
+    --palatinate-blue-700: #022DA1;
+    --palatinate-blue-750: #022173;
+    --palatinate-blue-800: #021C64;
+    --palatinate-blue-850: #02144F;
+    --palatinate-blue-900: #02103C;
+    --palatinate-blue-950: #010B28;
+    --palatinate-blue-1000: #010514;
+
+    --aqua-green-300: #13CDC2;
+    --aqua-green-400: #12BCB2;
+    --aqua-green-500: #00A398;
+    --aqua-green-500-16: #00A39829;
+    --aqua-green-500-4: #00A3980A;
+    --aqua-green-600: #008F85;
+  
+    --amber-400: #FFC20A;
+    --amber-500: #F7B900;
+    --amber-500-16: #F7B90029;
+    --amber-500-4: #F7B9000A;
+    --amber-600: #E0A800;
+    
+    --vermillion-400: #FF4747;
+    --vermillion-500: #FF2E2E;
+    --vermillion-500-16: #FF2E2E29;
+    --vermillion-500-4: #FF2E2E0A;
+    --vermillion-600: #E92424;
+  
+    --bitcoin-500: #F7931A;
+    --tether-500: #00B6B6;
+  }

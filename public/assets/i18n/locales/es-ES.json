@@ -1,0 +1,42 @@
+[
+    {
+        "identifier": "home",
+        "source_string": "Home",
+        "translation": "Inicio",
+        "context": " -> home",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features",
+        "source_string": "Features",
+        "translation": "Características",
+        "context": " -> features",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "faq",
+        "source_string": "FAQ",
+        "translation": "FAQ",
+        "context": " -> faq",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "fees",
+        "source_string": "Fees",
+        "translation": "Fees",
+        "context": " -> fees",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "contact us",
+        "source_string": "Contact Us",
+        "translation": "Contáctanos",
+        "context": " -> contact_us",
+        "labels": null,
+        "max_length": null
+    }
+]

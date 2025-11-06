@@ -1,0 +1,128 @@
+:root {
+  --subtitle-font-size: clamp(
+    1.125rem,
+    0.5vw + 1rem,
+    1.375rem
+  ); /* Min value (18px) ends at 400 px. Max value (22px) starts at 1200 px. */
+  --subtitle-line-height: 160%;
+  --subtitle-letter-spacing: 0;
+
+  --body-1-font-size: 1.125rem; /* 18px */
+  --body-1-line-height: 180%;
+  --body-1-letter-spacing: -0.01em;
+
+  --body-2-font-size: 1rem; /* 16px */
+  --body-2-line-height: 160%;
+  --body-2-letter-spacing: 0;
+
+  --caption-font-size: 0.875rem; /* 14px */
+  --caption-line-height: 120%;
+  --caption-letter-spacing: 0;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  letter-spacing: var(--body-1-letter-spacing);
+}
+
+h1,
+.text-h1 {
+  font-size: clamp(
+    3rem,
+    5vw + 1rem,
+    5.125rem
+  ); /* Min value (48px) ends at 640 px. Max value (82px) starts at 1320 px. */
+  line-height: 5.125rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+h2,
+.text-h2 {
+  font-size: clamp(
+      3rem,
+      2vw + 2.25rem,
+      3.5rem
+    ); /* Min value (48px) ends at 600 px. Max value (56px) starts at 1000 px. */
+  line-height: 3.5rem;
+  letter-spacing: 0.01em; /* -1% */
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+h3,
+.text-h3 {
+  font-size: clamp(
+    1.875rem,
+    3vw + 1rem,
+    3rem
+  ); /* Min value (30px) ends at 467 px. Max value (48px) starts at 1067 px. */
+  line-height: 3rem;
+  letter-spacing: 0.01em; /* -1% */
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+h4,
+.text-h4 {
+  font-size: clamp(
+    1.5rem,
+    1.333vw + 1rem,
+    1.875rem
+  ); /* Min value (24px) ends at 600 px. Max value (30px) starts at 1050 px. */
+  line-height: 2.625rem; /* fixed 140% of max font size */
+  letter-spacing: 0.01em;
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+h5,
+.text-h5 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2.1rem; /* Fixed at 140% of 1.5rem */
+  letter-spacing: 0.01em;
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+p {
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.font-regular {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semi-bold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
+}
+
+.text-subtitle {
+  font-size: var(--subtitle-font-size);
+  line-height: var(--subtitle-line-height);
+  letter-spacing: var(--subtitle-letter-spacing);
+}
+
+.text-body-1 {
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  letter-spacing: var(--body-1-letter-spacing);
+}
+
+.text-body-2 {
+  font-size: var(--body-2-font-size);
+  line-height: var(--body-2-line-height);
+  letter-spacing: var(--body-2-letter-spacing);
+}
+
+.text-caption {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  letter-spacing: var(--caption-letter-spacing);
+}

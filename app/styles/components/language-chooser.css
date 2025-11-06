@@ -1,0 +1,72 @@
+/* Language Chooser Component Styles */
+
+.aqua-header-localization {
+  position: relative;
+  display: inline-block;
+  z-index: 9999;
+}
+
+.aqua-header-globe {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.aqua-header-globe:hover {
+  opacity: 0.7;
+}
+
+.aqua-header-localization-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  min-width: 140px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.aqua-header-localization-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.aqua-header-localization-menu li {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #022173;
+  font-size: 14px;
+}
+
+.aqua-header-localization-menu li:hover {
+  background-color: #f5f5f5;
+}
+
+.aqua-header-localization-menu li.active {
+  background-color: #e8f0fe;
+  color: #022173;
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .aqua-header-localization-menu {
+    min-width: 120px;
+  }
+
+  .aqua-header-localization-menu li {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}

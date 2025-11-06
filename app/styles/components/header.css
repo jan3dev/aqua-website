@@ -1,0 +1,349 @@
+:root {
+  --header-nav-height: 6.625rem; /* 106px  */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header.scrolled {
+  background-color: var(--GlassSurfaceAccent);
+  backdrop-filter: blur(15px);
+}
+
+#aqua-desktop-header {
+  display: none;
+}
+
+.aqua-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  height: var(--header-nav-height);
+  padding: 0 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Localization */
+.aqua-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* 24px */
+}
+
+.aqua-header-mobile-controls {
+  gap: 1rem; /* 16px - tighter spacing for mobile */
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .aqua-header-mobile-controls {
+    gap: 1.25rem; /* 20px - slightly more space on tablet */
+  }
+}
+
+.aqua-header-globe path {
+  fill: var(--palatinate-blue-750);
+  transition: 250ms ease-in;
+}
+
+#aqua-desktop-header .aqua-header-globe path {
+  fill: var(--solid-white);
+}
+
+#aqua-mobile-header.mobile-menu-active .aqua-header-globe path {
+  fill: var(--solid-white);
+}
+
+/* Ensure mobile header language chooser appears above menu when open */
+#aqua-mobile-header .aqua-header-localization {
+  z-index: 1101; /* Higher than mobile menu (1100) and header (1100) */
+}
+
+.aqua-header-localization {
+  position: relative;
+  line-height: 22px;
+  z-index: 9999;
+}
+
+.aqua-header-globe {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.aqua-header-localization-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(-10px);
+  transition: opacity 200ms ease, transform 200ms ease;
+  right: 0;
+  top: calc(100% + 0.78125rem); /* 100% + 12.5px */
+  list-style-type: none;
+  background-color: var(--solid-white);
+  color: var(--palatinate-blue-750);
+  border-radius: 0.5rem; /* 8px */
+  padding: 0;
+  z-index: 9999;
+}
+
+.aqua-header-localization-menu.on {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.aqua-header-localization-menu li {
+  padding: 0.78125rem 1rem; /* 12.5px 16px */
+  width: 9.1875rem; /* 147px */
+  line-height: var(--caption-line-height);
+  cursor: pointer;
+}
+
+.aqua-header-localization-menu li:not(:last-child) {
+  border-bottom: 1px solid var(--gray-100);
+}
+
+/* Burger */
+.aqua-header-burger {
+  width: 26.67px;
+  height: 18.67px;
+  overflow-x: clip;
+  position: relative;
+  margin: 0 var(--aqua-half-margin);
+  cursor: pointer;
+}
+
+.aqua-header-burger > div {
+  position: absolute;
+  border: 1px solid var(--palatinate-blue-750);
+  border-radius: 5px;
+  transition: 250ms ease-in;
+  left: 0px;
+  opacity: 1;
+  width: 100%;
+}
+
+#aqua-mobile-header.mobile-menu-active .aqua-header-burger > div {
+  border: 1px solid var(--solid-white);
+}
+
+.aqua-header-burger.on > div {
+  top: 50%;
+}
+
+.aqua-header-burger > div:first-child {
+  top: 0;
+  left: 0;
+}
+
+.aqua-header-burger > div:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.aqua-header-burger > div:last-child {
+  bottom: 0;
+}
+
+.aqua-header-burger.on > div:first-child {
+  rotate: 135deg;
+  top: 50%;
+}
+
+.aqua-header-burger.on > div:nth-child(2) {
+  opacity: 0;
+}
+
+.aqua-header-burger.on > div:last-child {
+  rotate: -135deg;
+  bottom: 50%;
+}
+
+.aqua-header-nav ul {
+    display: flex;
+    gap: 0.5rem; /* 8px */
+    align-items: center;
+}
+
+.aqua-header-nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  overflow-y: scroll
+}
+
+.aqua-header-nav a:visited {
+  color: white;
+}
+.aqua-header-nav a:hover {
+  color: white;
+}
+.aqua-header-nav a:active {
+  color: white;
+}
+
+.aqua-header-nav ul li {
+  border-radius: var(--standard-border-radius);
+  padding: 0.5rem 1.5rem; /* 8px 24px */
+}
+
+.aqua-header-nav a:link {
+  color: white;
+  font-weight: 500;
+  font-size: var(--body-2-font-size);
+}
+
+.aqua-header-nav ul li:hover {
+  background-color: #0000000D;
+}
+
+.aqua-header-nav ul li.nav-current {
+    background-color: var(--palatinate-blue-750);
+}
+
+.aqua-header-nav ul li.nav-current a:link,
+.aqua-header-nav ul li.nav-current a:visited {
+  color: var(--aqua-blue-300);
+}
+
+/* Hide the Fees nav from the main header */
+.aqua-header-nav .nav-fees {
+  display: none;
+}
+
+.aqua-header-button .aqua-button {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  padding: 1rem 1.5rem; /* 16px 24px */
+}
+
+#aqua-header-mobile-menu .aqua-header-button .aqua-button {
+  font-size: 1rem; /* 16px */
+  background-color: var(--aqua-blue-200);
+  color: var(--palatinate-blue-750);
+}
+
+#aqua-header-mobile-menu .aqua-header-button .aqua-button:hover {
+  background-color: var(--aqua-blue-300);
+  color: var(--palatinate-blue-750);
+}
+
+/* Mobile Modal */
+ #aqua-header-mobile-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    background-color: var(--GlassSurface);
+    backdrop-filter: blur(60px);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    margin: 0;
+    padding: 0 0 3rem;
+    border: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+#aqua-header-mobile-menu.on {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#aqua-header-mobile-menu .aqua-header-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 3.4375rem; /* 55px */
+}
+
+#aqua-header-mobile-menu .aqua-header-nav ul {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+#aqua-header-mobile-menu .aqua-header-nav ul li {
+  padding: 0.5rem 2rem; /* 8px 32px */
+}
+
+#aqua-header-mobile-menu .aqua-header-nav ul li.nav-current {
+    background-color: transparent;
+    color: var(--aqua-blue-400);
+}
+
+#aqua-header-mobile-menu .aqua-header-nav ul li.nav-current a:link {
+    color: var(--aqua-blue-200);
+}
+
+#aqua-header-mobile-menu .aqua-header-nav ul li.nav-current a:visited {
+    color: var(--aqua-blue-200);
+}
+
+#aqua-header-mobile-menu .aqua-header-nav ul li.nav-current a:hover {
+    color: var(--aqua-blue-200);
+}
+
+#aqua-header-mobile-menu .aqua-header-nav ul li.nav-current a:active {
+    color: var(--aqua-blue-200);
+}
+
+#aqua-header-mobile-menu .aqua-header-nav a:link {
+    font-size: 1.5rem; /* 24px */
+    letter-spacing: 0;
+    line-height: 2.1rem;
+}
+
+#aqua-mobile-header .aqua-logo.mobile-modal-on {
+  display: none;
+}
+
+#aqua-mobile-header.mobile-menu-active .aqua-logo.mobile-modal-on {
+  display: block;
+}
+
+#aqua-mobile-header.mobile-menu-active .aqua-logo.mobile-modal-off {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  #aqua-mobile-header {
+    display: none;
+  }
+  #aqua-desktop-header {
+    display: block;
+  }
+
+  #aqua-header-mobile-menu {
+    display: none;
+  }
+
+  /* Hide mobile header language chooser in desktop view */
+  #aqua-mobile-header .aqua-header-localization {
+    display: none;
+  }
+}
+
+/* TODO: */
+/* Localization */
+.aqua-header-localization-list {
+  display: none;
+}

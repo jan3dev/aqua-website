@@ -1,0 +1,129 @@
+@import url("./components/header.css");
+@import url("./components/footer.css");
+@import url("./components/section.css");
+@import url("./components/cards.css");
+@import url("./components/button.css");
+@import url("./components/modals.css");
+
+:root {
+  --max-content-width: 1440px;
+  --standard-border-radius: 1.5rem; /* 24px */
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: var(--SurfacePrimaryInverse);
+  color: var(--TextPrimaryInverse);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+input {
+  font-weight: 400;
+  background-color: var(--palatinate-blue-750);
+  border: none;
+  color: var(--solid-white);
+}
+
+input:-webkit-autofill {
+  background-color: var(--palatinate-blue-750) !important;
+  color: var(--solid-white) !important;
+  caret-color: var(--solid-white) !important;
+  /* Required to force text color in some cases */
+  -webkit-text-fill-color: var(--solid-white) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::placeholder {
+  color: var(--solid-white);
+}
+
+.download-logo {
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.aqua-faq {
+  margin: 3rem 0; /* 48px 0px */
+  cursor: pointer;
+}
+
+.aqua-faq:first-child, .aqua-faq:last-child {
+  margin: 0;
+}
+
+.aqua-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* 16px */
+}
+
+.aqua-faq-question h5 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.aqua-faq .selector-up,
+.aqua-faq-answer {
+  display: none;
+}
+
+.aqua-faq.active .selector-up,
+.aqua-faq.active .aqua-faq-answer {
+  display: block;
+}
+
+.aqua-faq.active .selector-down {
+  display: none;
+}
+
+.aqua-faq-answer a {
+  color: #0D6EFD;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem; /* 4px */
+}
+
+.aqua-faq-answer a:hover {
+  text-decoration: underline;
+}
+
+.aqua-faq-link-icon {
+  display: inline-block;
+}
+
+.aqua-download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* 16px */
+}
+
+.error-section .error-description:last-of-type {
+  margin-bottom: 3rem; /* 48px */
+}
+
+.error-message {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 0.5rem; /* 8px */
+}
+
+.grecaptcha-badge { 
+  visibility: hidden;
+}
+
+.animate-float {
+      animation: float 5s ease-in-out infinite;
+      position: relative;
+    }
+
+    @keyframes float {
+      0%, 100%   { transform: translateY(0); }
+      50%  { transform: translateY(-20px); }
+    }

@@ -1,0 +1,75 @@
+.aqua-button, button, input {
+  all: unset;
+  border-radius: .5rem; /* 8px */
+  padding: 1rem 2rem; /* 16px 32px */
+  line-height: 1.625rem; /* 26px */
+  font-size: var(--body-2-font-size);
+}
+
+.aqua-button,
+button {
+  display: inline-block;
+  background-color: var(--palatinate-blue-750);
+  color: var(--aqua-blue-200);
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: var(--body-2-letter-spacing);
+  font-size: var(--body-2-font-size);
+  line-height: var(--body-2-line-height);
+}
+
+.aqua-button.aqua-button-accent,
+button.aqua-button-accent {
+  background-color: var(--aqua-blue-300);
+  color: var(--aqua-blue-900);
+}
+
+.aqua-button-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 8px */
+}
+
+.aqua-button-with-icon .success-icon,
+.aqua-button-with-icon .loading-icon {
+  display: none;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.aqua-button-with-icon .loading-icon {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+.aqua-button:visited {
+  color: var(--aqua-blue-200);
+}
+
+.aqua-button-accent:visited {
+  color: var(--aqua-blue-900);
+}
+
+button:hover, .aqua-button:hover {
+  box-shadow: inset 0px 4px 100px 0px #0000001A;
+}
+
+button:active, .aqua-button:active {
+  box-shadow: inset 0px 4px 100px 0px #00000033;
+}
+
+.aqua-button:focus, button:focus {
+  outline: 1px solid var(--AccentBrand);
+}
+
+.aqua-button-accent:focus, button.aqua-button-accent:focus {
+  outline: 1px solid var(--aqua-blue-400);
+}
+
+button:disabled, .aqua-button.disabled {
+  opacity: .4;
+}

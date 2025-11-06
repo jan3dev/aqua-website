@@ -1,0 +1,23 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--Spacing-S, 8px);
+    background: var(--palatinate-blue-750-og, #022173);
+    box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.10) inset;
+    width: 180px;
+    height: 52px;
+    gap:12px;
+}
+
+.button-text{
+    color: var(--AquaBlue-200, #5ADBFB);
+    /* Web/Body 2/Bold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 25.6px */
+}

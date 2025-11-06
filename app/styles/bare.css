@@ -1,0 +1,132 @@
+.aqua-bare {
+  background-color: var(--solid-white);
+  color: var(--TextPrimary);
+}
+
+.aqua-bare .aqua-terms-of-use a:link {
+  color: #33d4ff;
+}
+.aqua-bare .aqua-terms-of-use a:visited {
+  color: #33d4ff;
+}
+.aqua-bare .aqua-terms-of-use a:hover {
+  color: var(--aqua-green);
+}
+.aqua-bare .aqua-terms-of-use a:active {
+  color: #33d4ff;
+}
+
+body.aqua-bare .aqua-section-title {
+  font-size: clamp(
+    1.5rem,
+    1.333vw + 1rem,
+    1.875rem
+  ); /* Min value (24px) ends at 600 px. Max value (30px) starts at 1050 px. */
+  line-height: 2.625rem; /* fixed 140% of max font size */
+  letter-spacing: 0;
+  margin-bottom: 1.5rem; /* 24px */
+  font-weight: 600;
+}
+
+body.aqua-bare p {
+  margin: 1rem 0; /* 16px 0 */
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  letter-spacing: var(--body-1-letter-spacing);
+  font-weight: 400;
+}
+
+body.aqua-bare p:first-child strong {
+  display: inline-block;
+  margin-bottom: 2rem; /* 32px */
+}
+
+.aqua-terms-of-use {
+  max-width: 55.625rem; /* 890px total width with 48px of L&R padding for a final 842px width  */;
+  margin: 5rem auto 5rem;
+  padding: 0 1.5rem; /* 24px */
+}
+
+.aqua-terms-of-use p {
+  margin: var(--aqua-margin) 0;
+}
+
+.aqua-terms-of-use h2 {
+  font-size: 33px;
+}
+
+.aqua-terms-of-use h3 {
+  margin-top: 5rem; /* 80px */
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.aqua-terms-of-use ol > li {
+  padding: 0.5rem 0; /* 8px 0 */
+
+}
+
+.aqua-terms-of-use ul {
+  list-style-type: disc;
+}
+
+.aqua-terms-of-use ul li {
+  margin-left: 30px;
+}
+
+.custom-bare-web-container header {
+  background-color: var(--SurfaceAccent);
+}
+
+.custom-bare-web-container header.scrolled {
+  background-color: var(--GlassSurfaceAccent);
+}
+
+body.custom-bare-web-page header {
+  background-color: var(--SurfaceAccent) !important;
+}
+
+body.custom-bare-web-page header.scrolled {
+  background-color: var(--GlassSurfaceAccent) !important;
+  backdrop-filter: blur(15px);
+}
+
+/* Remove active link styling on privacy-web page */
+body.custom-bare-web-page .aqua-header-nav ul li.nav-current {
+  background-color: transparent;
+}
+
+body.custom-bare-web-page .aqua-header-nav ul li.nav-current a:link,
+body.custom-bare-web-page .aqua-header-nav ul li.nav-current a:visited {
+  color: white;
+}
+
+/* Hide header and footer on privacy page */
+body.hide-header-footer header {
+  display: none !important;
+}
+
+body.hide-header-footer footer {
+  display: none !important;
+}
+
+.custom-bare-web-container .aqua-terms-of-use {
+  padding: 5rem 1.5rem 0; /* 80px 24px 0 */
+}
+
+.custom-bare-web-main {
+  margin-top: 6.625rem; /* 106px */
+}
+
+
+@media (min-width: 992px) {
+  .aqua-terms-of-use ol > li {
+    margin-left: 1rem; /* 16px */
+  }
+}
+
+@media (min-width: 1440px) {
+  .aqua-terms-of-use {
+    padding: 2rem 0; /* 32px 0 */
+  }
+}

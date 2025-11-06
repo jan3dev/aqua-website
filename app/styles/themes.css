@@ -1,0 +1,34 @@
+/* === Light Theme (Default) === */
+:root, .theme-light {
+    /* Text */
+    --TextPrimary: var(--palatinate-blue-750);
+    --TextSecondary: var(--palatinate-blue-800);
+    --TextPrimaryInverse: var(--solid-white);
+    --TextSecondaryInverse: var(--aqua-blue-100);
+    --TextSurfaceShadow: 0px 0px 36px #00000016;
+
+    /* Surface */
+    --SurfacePrimary: var(--aqua-blue-100);
+    --SurfaceSecondary: var(--aqua-blue-900);
+    --SurfacePrimaryInverse: var(--palatinate-blue-750);
+    --SurfaceAccent: var(--aqua-blue-300);
+    --SurfaceBackground: var(--solid-white);
+    --SurfaceShadow: 0px 0px 16px 0px #00000014;
+
+    /* Glass */
+    --GlassSurface: #02103C99;
+    --GlassSurfaceAccent: #00C7F9B3;
+
+    /* Accent */
+    --AccentBrand: var(--aqua-blue-300);
+    --AccentDangerTransparent: var(--vermillion-500-4);
+    --AccentSuccessTransparent: var(--aqua-green-500-4);
+}
+
+
+/* === Dark Theme === */
+/* Todo: Fill these after ready for dev. Example below */
+.theme-dark {
+    /* Surface */
+    --SurfacePrimary: var(--aqua-blue-900);
+}

@@ -1,0 +1,46 @@
+.aqua-download-description a:link {
+  color: white;
+  text-decoration: underline;
+}
+.aqua-download-description a:visited {
+  color: white;
+}
+.aqua-download-description a:hover {
+  color: white;
+}
+.aqua-download-description a:active {
+  color: white;
+}
+
+.aqua-download-description:last-of-type {
+  margin-bottom: 2.5rem; /* 40px */
+}
+
+.aqua-download-qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* 16px */
+  padding: 1rem; /* 16px */
+  border-radius: 1.5rem; /* 24px */
+  background-color: var(--SurfaceBackground);
+  width: 175px;
+  height: auto;
+}
+
+.aqua-download-qr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem; /* 4px */
+  color: var(--palatinate-blue-750);
+}
+
+.aqua-download-qr-header svg path {
+  fill: var(--palatinate-blue-750);
+}
+
+.aqua-download-qr-img {
+  width: 100%;
+  height: auto;
+}
