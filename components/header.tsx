@@ -128,7 +128,7 @@ export default function Header() {
             />
           </a>
           <div className="aqua-header-controls aqua-header-mobile-controls">
-            <LanguageChooser />
+            {false && <LanguageChooser />}
             <div
               className={`aqua-header-burger ${mobileMenuOpen ? "on" : ""}`}
               id="aqua-header-burger"
@@ -205,7 +205,7 @@ export default function Header() {
             </div>
           </div>
           <div className="aqua-header-controls">
-            <LanguageChooser />
+            {false && <LanguageChooser />}
             <div className="aqua-header-button">
               <a
                 href="#"
