@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "aqua-wallet",
+      name: "aqua-website",
       cwd: "/home/ubuntu/aqua-website",   
       script: "npm",
       args: "start",
