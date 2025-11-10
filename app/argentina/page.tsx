@@ -1,6 +1,11 @@
+"use client"
+import { useState } from "react";
 import styles from "./argentina.module.css";
+import DownloadModal from "@/components/downloadModal";
 
 export default function ArgentinaPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       {/* Hero Section */}
@@ -22,7 +27,7 @@ export default function ArgentinaPage() {
           <p className={styles.heroSubtitle}>
             AQUA es tu oportunidad de escapar <br /> de la inflación
           </p>
-          <button className={styles.heroButton}>Descargá la app</button>
+          <button className={styles.heroButton} onClick={() => setIsModalOpen(true)}>Descargá la app</button>
         </div>
 
         <figure className={styles.heroPhoneMockup}>
@@ -35,7 +40,7 @@ export default function ArgentinaPage() {
 
       {/* Features Section */}
       <section className={styles.sectionTwo}>
-        {/* Main Virtual Card Feature */}a
+        {/* Main Virtual Card Feature */}
         <article className={styles.SectionTwoCard}>
           <div className={styles.card1TextContainer}>
             <span className={styles.iconFrame}>
@@ -194,6 +199,8 @@ export default function ArgentinaPage() {
           </div>
         </div>
       </section>
+
+      <DownloadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }
