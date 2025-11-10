@@ -150,7 +150,7 @@ export default function Header() {
             <div className="aqua-navigation">
              <ul className="nav">
 
-        <li className={`nav-home ${pathname === '/' && !isFaqInView ? 'nav-current' : ''}`}><a href="/">{t('home')}</a></li>
+        <li className={`nav-home ${(pathname === '/' || pathname === '/argentina') && !isFaqInView ? 'nav-current' : ''}`}><a href="/">{t('home')}</a></li>
         <li className={`nav-features ${pathname === '/features' ? 'nav-current' : ''}`}><a href="/features">{t('features')}</a></li>
         <li className="nav-contact-us"><a href="https://jan3.zendesk.com/hc/en-us">{t('contact us')}</a></li>
         <li className={`nav-faq ${pathname === '/' && isFaqInView ? 'nav-current' : ''}`}><a href="/#faq">{t('faq')}</a></li>
@@ -189,7 +189,7 @@ export default function Header() {
           <div className="aqua-header-nav">
             <div className="aqua-navigation">
               <ul className="nav">
-                <li className={`nav-home ${pathname === '/' && !isFaqInView ? 'nav-current' : ''}`}>
+                <li className={`nav-home ${(pathname === '/' || pathname === '/argentina') && !isFaqInView ? 'nav-current' : ''}`}>
                   <a href="/">{t('home')}</a>
                 </li>
                 <li className={`nav-features ${pathname === '/features' ? 'nav-current' : ''}`}>
