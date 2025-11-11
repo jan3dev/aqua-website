@@ -394,16 +394,16 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="footer-link-group">
-                <span className="aqua-copyright text-body-2">
-                  {t('footer_copyright_notice').replace('2025', currentYear.toString())}
-                </span>
-              </div>
               <div className="footer-link-group text-body-2">
                 <span style={{textDecoration: "underline"}}>
                   <a href="https://jan3.com" target="_blank" rel="noopener noreferrer">{t('Built by JAN3')}</a>
                 </span>
               </div>
+            </div>
+            <div className="footer-row tablet-column no-bottom-border">
+                <span className="aqua-copyright text-body-2">
+                  {t('footer_copyright_notice').replace('2025', currentYear.toString())}
+                </span>
             </div>
             <div className="footer-row tablet-column">
               <div className="footer-link-group aqua-copyright text-caption">
