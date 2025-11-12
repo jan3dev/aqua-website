@@ -504,7 +504,7 @@
   display: block;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1020px) {
   .cardImageFrame img{ 
     right: -35px;
   }
