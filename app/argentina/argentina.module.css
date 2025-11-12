@@ -298,10 +298,22 @@
   padding: var(--Spacing-Section-M, 160px) 189px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: var(--Spacing-M2, 32px);
   align-self: stretch;
   background: var(--Web-Surface-Background, #FFF);
   overflow: hidden;
+  width: 100%;
+}
+
+.sectionTwoContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Spacing-M2, 32px);
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .SectionTwoCard{
@@ -726,7 +738,18 @@
   }
 
   .sectionTwo {
-    padding: 160px 189px;
+    padding: 160px 80px;
+  }
+}
+
+/* Ultra-wide screens (1920px and above) */
+@media (min-width: 1920px) {
+  .sectionTwo {
+    padding: 160px 120px;
+  }
+
+  .sectionTwoContent {
+    max-width: 1600px;
   }
 }
 
