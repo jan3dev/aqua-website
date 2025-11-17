@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function SectionLiquidNetwork() {
+  const { t } = useTranslation();
+
   return (
     <section className="section-centered">
       <div className="section-content">
@@ -15,12 +18,10 @@ export default function SectionLiquidNetwork() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h3 className="section-title">
-            THE LIQUID NETWORK
+            {t('features_page_liquid_network_title')}
           </h3>
           <p className="text-subtitle font-semi-bold">
-            Liquid is a sidechain Layer 2 solution that unlocks faster settlement for Bitcoin, confidential transactions,
-            and the possibility to issue digital assets such as stablecoins or financial instruments without the need for a
-            native token.
+            {t('features_page_liquid_network_description')}
           </p>
         </motion.div>
 

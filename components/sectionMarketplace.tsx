@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function SectionMarketplace() {
+  const { t } = useTranslation();
+
   return (
     <section className="section-centered section-white">
       <div className="section-content">
@@ -14,10 +17,10 @@ export default function SectionMarketplace() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h3 className="section-title">
-            A MARKETPLACE OF OPPORTUNITIES
+            {t('features_page_marketplace_opportunities_title')}
           </h3>
           <p className="text-subtitle font-semi-bold">
-            Unleash Bitcoin's full potential with AQUA. Gain instant access to Layer 2 for faster, smarter transactions.
+            {t('features_page_marketplace_opportunities_description')}
           </p>
         </motion.div>
 
@@ -39,10 +42,10 @@ export default function SectionMarketplace() {
                 </svg>
               </div>
               <h5>
-                Take Full Control of Your Bitcoin
+                {t('features_page_control_bitcoin_title')}
               </h5>
               <p>
-                With AQUA, you don't just hold Bitcoin you use it your way. Swap, spend, or save with tools that make Bitcoin work for everyday life.
+                {t('features_page_control_bitcoin_description')}
               </p>
             </article>
             <article className="aqua-card">
@@ -55,10 +58,10 @@ export default function SectionMarketplace() {
                 </svg>
               </div>
               <h5>
-                The Bitcoin Wallet That Does More
+                {t('features_page_bitcoin_wallet_more_title')}
               </h5>
               <p>
-                AQUA is your gateway to services built on Bitcoin. From payments to powerful integrations, AQUA connects you to what's next in Bitcoin, all in one app.
+                {t('features_page_bitcoin_wallet_more_description')}
               </p>
             </article>
             <article className="aqua-card">
@@ -71,13 +74,14 @@ export default function SectionMarketplace() {
                 </svg>
               </div>
               <h5>
-                Help Shape the AQUA Marketplace
+                {t('features_page_shape_marketplace_title')}
               </h5>
               <p>
-                Want more features, exchanges, or services? We want to hear from you.{" "}
+                {t('features_page_shape_marketplace_description')}{" "}
                 <a href="https://jan3.zendesk.com/hc/en-us" target="_blank" rel="noopener noreferrer">
-                  Submit your suggestions
-                </a>, we're always looking to improve.
+                  {t('features_page_shape_marketplace_link_text')}
+                </a>
+                {t('features_page_shape_marketplace_description_end')}
               </p>
             </article>
           </div>

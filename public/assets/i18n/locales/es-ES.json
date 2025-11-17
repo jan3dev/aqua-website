@@ -38,5 +38,165 @@
         "context": " -> contact_us",
         "labels": null,
         "max_length": null
+    },
+    {
+        "identifier": "features_page_powering_instant_title",
+        "source_string": "POWERING INSTANT GLOBAL TRANSFERS",
+        "translation": "IMPULSANDO TRANSFERENCIAS GLOBALES INSTANTÁNEAS",
+        "context": " -> features_page_powering_instant_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_powering_instant_description",
+        "source_string": "Whether you're paying an invoice or transferring funds across networks, AQUA makes it easy. Send USDt and Bitcoin quickly, securely, and without high transaction fees no matter where you are.",
+        "translation": "Ya sea que estés pagando una factura o transfiriendo fondos a través de las redes, AQUA lo hace fácil. Envía USDt y Bitcoin de forma rápida, segura y sin comisiones de transacción altas, no importa dónde estés.",
+        "context": " -> features_page_powering_instant_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_lightning_on_liquid_title",
+        "source_string": "Lightning On Liquid",
+        "translation": "Lightning en Liquid",
+        "context": " -> features_page_lightning_on_liquid_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_lightning_on_liquid_description",
+        "source_string": "AQUA's Lightning payments are fast and cheap, letting you pay anyone in the world easily and instantly.",
+        "translation": "Los pagos Lightning de AQUA son rápidos y económicos, permitiéndote pagar a cualquier persona en el mundo fácil e instantáneamente.",
+        "context": " -> features_page_lightning_on_liquid_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_confidential_bitcoin_liquid_title",
+        "source_string": "Faster, Confidential Bitcoin on Liquid",
+        "translation": "Bitcoin Más Rápido y Confidencial en Liquid",
+        "context": " -> features_page_confidential_bitcoin_liquid_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_confidential_bitcoin_liquid_description",
+        "source_string": "Liquid enables quick, low-cost Bitcoin transfers and confidential transactions ideal for everyday payments.",
+        "translation": "Liquid permite transferencias de Bitcoin rápidas y de bajo costo, además de transacciones confidenciales ideales para pagos cotidianos.",
+        "context": " -> features_page_confidential_bitcoin_liquid_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_send_tether_usdt_title",
+        "source_string": "Send Tether USDt\nto Anyone, Anywhere",
+        "translation": "Envía Tether USDt\na Cualquiera, en Cualquier Lugar",
+        "context": " -> features_page_send_tether_usdt_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_send_tether_usdt_description",
+        "source_string": "AQUA supports USDt on Liquid, enabling seamless transfers to Tron, Ethereum, and more.",
+        "translation": "AQUA soporta USDt en Liquid, permitiendo transferencias sin problemas a Tron, Ethereum y más.",
+        "context": " -> features_page_send_tether_usdt_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_liquid_network_title",
+        "source_string": "THE LIQUID NETWORK",
+        "translation": "LA RED LIQUID",
+        "context": " -> features_page_liquid_network_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_liquid_network_description",
+        "source_string": "Liquid is a sidechain Layer 2 solution that unlocks faster settlement for Bitcoin, confidential transactions, and the possibility to issue digital assets such as stablecoins or financial instruments without the need for a native token.",
+        "translation": "Liquid es una solución de Capa 2 de cadena lateral que desbloquea liquidación más rápida para Bitcoin, transacciones confidenciales y la posibilidad de emitir activos digitales como stablecoins o instrumentos financieros sin la necesidad de un token nativo.",
+        "context": " -> features_page_liquid_network_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_marketplace_opportunities_title",
+        "source_string": "A MARKETPLACE OF OPPORTUNITIES",
+        "translation": "UN MERCADO DE OPORTUNIDADES",
+        "context": " -> features_page_marketplace_opportunities_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_marketplace_opportunities_description",
+        "source_string": "Unleash Bitcoin's full potential with AQUA. Gain instant access to Layer 2 for faster, smarter transactions.",
+        "translation": "Libera todo el potencial de Bitcoin con AQUA. Obtén acceso instantáneo a la Capa 2 para transacciones más rápidas e inteligentes.",
+        "context": " -> features_page_marketplace_opportunities_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_control_bitcoin_title",
+        "source_string": "Take Full Control of Your Bitcoin",
+        "translation": "Toma el Control Total de Tu Bitcoin",
+        "context": " -> features_page_control_bitcoin_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_control_bitcoin_description",
+        "source_string": "With AQUA, you don't just hold Bitcoin you use it your way. Swap, spend, or save with tools that make Bitcoin work for everyday life.",
+        "translation": "Con AQUA, no solo tienes Bitcoin, lo usas a tu manera. Intercambia, gasta o ahorra con herramientas que hacen que Bitcoin funcione en tu vida diaria.",
+        "context": " -> features_page_control_bitcoin_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_bitcoin_wallet_more_title",
+        "source_string": "The Bitcoin Wallet That Does More",
+        "translation": "La Billetera de Bitcoin Que Hace Más",
+        "context": " -> features_page_bitcoin_wallet_more_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_bitcoin_wallet_more_description",
+        "source_string": "AQUA is your gateway to services built on Bitcoin. From payments to powerful integrations, AQUA connects you to what's next in Bitcoin, all in one app.",
+        "translation": "AQUA es tu puerta de entrada a servicios construidos en Bitcoin. Desde pagos hasta integraciones poderosas, AQUA te conecta con lo último en Bitcoin, todo en una aplicación.",
+        "context": " -> features_page_bitcoin_wallet_more_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_shape_marketplace_title",
+        "source_string": "Help Shape the AQUA Marketplace",
+        "translation": "Ayuda a Dar Forma al Mercado de AQUA",
+        "context": " -> features_page_shape_marketplace_title",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_shape_marketplace_description",
+        "source_string": "Want more features, exchanges, or services? We want to hear from you.",
+        "translation": "¿Quieres más funciones, intercambios o servicios? Queremos escucharte.",
+        "context": " -> features_page_shape_marketplace_description",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_shape_marketplace_link_text",
+        "source_string": "Submit your suggestions",
+        "translation": "Envía tus sugerencias",
+        "context": " -> features_page_shape_marketplace_link_text",
+        "labels": null,
+        "max_length": null
+    },
+    {
+        "identifier": "features_page_shape_marketplace_description_end",
+        "source_string": ", we're always looking to improve.",
+        "translation": ", siempre estamos buscando mejorar.",
+        "context": " -> features_page_shape_marketplace_description_end",
+        "labels": null,
+        "max_length": null
     }
 ]

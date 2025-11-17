@@ -9,7 +9,13 @@ const resources = {
   en: {
     translation: en
   },
+  'en-US': {
+    translation: en
+  },
   es: {
+    translation: es
+  },
+  'es-ES': {
     translation: es
   }
 };
@@ -31,7 +37,7 @@ if (!i18n.isInitialized) {
         order: ['localStorage', 'navigator'],
         caches: ['localStorage']
       },
-      supportedLngs: ['en', 'es'],
+      supportedLngs: ['en', 'en-US', 'es', 'es-ES'],
       react: {
         useSuspense: false // Disable suspense for App Router compatibility
       }

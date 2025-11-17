@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function SectionPoweringTransfers() {
+  const { t } = useTranslation();
+
   return (
     <section className="section-centered section-white">
       <div className="section-content">
@@ -14,11 +17,10 @@ export default function SectionPoweringTransfers() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h3 className="section-title">
-            POWERING INSTANT GLOBAL TRANSFERS
+            {t('features_page_powering_instant_title')}
           </h3>
           <p className="text-subtitle font-semi-bold">
-            Whether you're paying an invoice or transferring funds across networks, AQUA makes it easy. Send USDt and
-            Bitcoin quickly, securely, and without high transaction fees no matter where you are.
+            {t('features_page_powering_instant_description')}
           </p>
         </motion.div>
 
@@ -40,10 +42,10 @@ export default function SectionPoweringTransfers() {
                 </svg>
               </div>
               <h5>
-                Lightning On Liquid
+                {t('features_page_lightning_on_liquid_title')}
               </h5>
               <p>
-                AQUA's Lightning payments are fast and cheap, letting you pay anyone in the world easily and instantly.
+                {t('features_page_lightning_on_liquid_description')}
               </p>
             </article>
             <article className="aqua-card">
@@ -56,10 +58,10 @@ export default function SectionPoweringTransfers() {
                 </svg>
               </div>
               <h5>
-                Faster, Confidential Bitcoin on Liquid
+                {t('features_page_confidential_bitcoin_liquid_title')}
               </h5>
               <p>
-                Liquid enables quick, low-cost Bitcoin transfers and confidential transactions ideal for everyday payments.
+                {t('features_page_confidential_bitcoin_liquid_description')}
               </p>
             </article>
             <article className="aqua-card">
@@ -72,12 +74,15 @@ export default function SectionPoweringTransfers() {
                 </svg>
               </div>
               <h5>
-                Send Tether USDt
-                <br />
-                to Anyone, Anywhere
+                {t('features_page_send_tether_usdt_title').split('\n').map((line, index, arr) => (
+                  <span key={index}>
+                    {line}
+                    {index < arr.length - 1 && <br />}
+                  </span>
+                ))}
               </h5>
               <p>
-                AQUA supports USDt on Liquid, enabling seamless transfers to Tron, Ethereum, and more.
+                {t('features_page_send_tether_usdt_description')}
               </p>
             </article>
           </div>
