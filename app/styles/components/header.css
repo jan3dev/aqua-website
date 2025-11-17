@@ -27,6 +27,8 @@ header.scrolled {
   height: var(--header-nav-height);
   padding: 0 1.5rem;
   flex-shrink: 0;
+  max-width: calc(var(--max-content-width) - 5rem);
+  margin: 0 auto;
 }
 
 /* Localization */
