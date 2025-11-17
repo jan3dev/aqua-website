@@ -1,10 +1,12 @@
 "use client"
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import styles from "./argentina.module.css";
 import DownloadModal from "@/components/downloadModal";
 
 export default function ArgentinaPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <>
@@ -58,7 +60,7 @@ export default function ArgentinaPage() {
                   Una tarjeta de débito virtual sin costo para gastar tus USDt y Bitcoin en cualquier compra online o servicio internacional.
                 </p>
               </div>
-              <button className={styles.cardButton}>
+              <button className={styles.cardButton} onClick={() => setIsModalOpen(true)}>
                 Pedila Ya!
               </button>
             </div>
@@ -148,7 +150,7 @@ export default function ArgentinaPage() {
               AQUA es la Superapp de Bitcoin que te da acceso a todo
             </p>
             <div style={{marginTop: '20px'}}>
-              <button>Descubrí más</button>
+              <button onClick={() => router.push('/features')}>Descubrí más</button>
             </div>
           </div>
 
